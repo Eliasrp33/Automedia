@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Automedia",
+    "slug": "automedia",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Automedia to use your camera to take product photos."
+        }
+      ]
+    ]
+  }
+}
+

@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  background: #000;
+  color: #f9fafb;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 10px 0 0;
+}
+
+.sub {
+  margin: 0 0 6px;
+  color: #9ca3af;
+}
+
+.card {
+  background: #0b0f19;
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid #1f2937;
+}
+
+.h2 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #0a0a0a;
+  color: #f9fafb;
+  font: inherit;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #6b7280;
+}
+
+.textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.label {
+  font-weight: 700;
+  margin: 10px 0 6px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  color: #111827;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btnSecondary {
+  background: #e5e7eb;
+  border-color: #e5e7eb;
+}
+
+.muted {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.info {
+  color: #065f46;
+  font-weight: 700;
+}
+
+.preview {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #0a0a0a;
+  border: 1px solid #1f2937;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.chip {
+  border: 1px solid #1f2937;
+  background: #0a0a0a;
+  color: #f9fafb;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.chip[data-active="true"] {
+  background: #fff;
+  border-color: #fff;
+  color: #111827;
+}
+
+.twoCol {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 860px) {
+  .twoCol {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
